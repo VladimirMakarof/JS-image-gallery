@@ -65,3 +65,14 @@ function apiRequest() {
 
     .catch(error => console.log(error));
 }
+function loadImages(data) {
+  for (let i = 0; i < data.results.length; i++) {
+    let image = document.createElement("div");
+    image.className = "img";
+    image.style.backgroundImage = "url(" + data.results[i].urls.raw + "&w=1366&h=768" + ")";
+    image.addEventListener("dblclick", function () {
+      window.open(data.results[i].links.download, '_blank');
+    })
+    grid.appendChild(image);
+  }
+}
