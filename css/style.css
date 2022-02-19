@@ -5,6 +5,7 @@
   --primary-1: #000000;
   --primary-2: #ffffff;
   --primary-3: #ffa500;
+  --primary-4: #808080;
 
   /* font */
   --font-1: "Comfortaa", cursive;
@@ -84,6 +85,7 @@ input:focus {
 
 #search_box i:hover {
   color: var(--primary-3);
+  transition: 1s;
 }
 #grid {
   width: 100%;
@@ -104,4 +106,34 @@ input:focus {
 }
 .fa-camera {
   color: var(--primary-3);
+}
+.footer {
+  background-color: var(--primary-1);
+  padding-top: 10px;
+  min-width: 500px;
+  margin-top: 20px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_logo-rss {
+  fill: var(--primary-2);
+  width: 70px;
+  height: 70px;
+}
+.footer_logo-rss:hover {
+  fill: var(--primary-4);
+  transition: 1s;
+}
+.github {
+  color: var(--primary-2);
+}
+.github.link:hover {
+  color: var(--primary-4);
+  transition: 1s;
 }
